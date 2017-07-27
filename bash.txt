@@ -1,0 +1,35 @@
+
+(actually ended up doing this in the console)
+aws ec2 run-instances \
+    --image-id ami-60b6c60a \
+    --count 1 \
+    --instance-type t2.medium \
+    --key-name YourKeyPair \
+    --security-group-ids sg-xxxxxxxx \
+    --subnet-id subnet-xxxxxxxx
+
+
+aws lambda create-function \
+    --function-name LambdaMediaInfo \
+    --runtime python2.7 \
+    --role "arn:aws:iam::403104210820:role/LambdaMediaInfoExecutionRole" \
+    --handler lambda_function.lambda_handler \
+    --description "Lambda MediaInfo Function" \
+    --timeout 60 \
+    --memory-size 128 \
+    --zip-file fileb://Lambda.zip
+
+
+
+aws lambda add-permission \
+    --function-name LambdaMediaInfo \
+    --statement-id Id-1 \
+    --action "lambda:InvokeFunction" \
+    --principal s3.amazonaws.com \
+    --source-arn arn:aws:s3:::video-metadata-source \
+    --source-account 403104210820 
+
+
+aws s3api put-bucket-notification \
+    --bucket video-metadata-source \
+    --notification-configuration file://notification.json

@@ -1,0 +1,91 @@
+create table
+
+{
+    "TableDescription": {
+        "TableArn": "arn:aws:dynamodb:us-east-1:403104210820:table/TechnicalMetadata", 
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "keyName", 
+                "AttributeType": "S"
+            }
+        ], 
+        "ProvisionedThroughput": {
+            "NumberOfDecreasesToday": 0, 
+            "WriteCapacityUnits": 1, 
+            "ReadCapacityUnits": 1
+        }, 
+        "TableSizeBytes": 0, 
+        "TableName": "TechnicalMetadata", 
+        "TableStatus": "CREATING", 
+        "KeySchema": [
+            {
+                "KeyType": "HASH", 
+                "AttributeName": "keyName"
+            }
+        ], 
+        "ItemCount": 0, 
+        "CreationDateTime": 1501098828.848
+    }
+}
+
+create role 
+{
+    "Role": {
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17", 
+            "Statement": [
+                {
+                    "Action": "sts:AssumeRole", 
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com"
+                    }, 
+                    "Effect": "Allow", 
+                    "Sid": ""
+                }
+            ]
+        }, 
+        "RoleId": "AROAJY3ACSMOK3CSXTDHS", 
+        "CreateDate": "2017-07-26T15:24:58.730Z", 
+        "RoleName": "LambdaMediaInfoExecutionRole", 
+        "Path": "/", 
+        "Arn": "arn:aws:iam::403104210820:role/LambdaMediaInfoExecutionRole"
+    }
+}
+
+create policy:
+{
+    "Policy": {
+        "PolicyName": "LambdaMediaInfoExecutionRolePolicy", 
+        "CreateDate": "2017-07-26T16:11:16.702Z", 
+        "AttachmentCount": 0, 
+        "IsAttachable": true, 
+        "PolicyId": "ANPAJ5YUUX2QQBTH4L2VO", 
+        "DefaultVersionId": "v1", 
+        "Path": "/", 
+        "Arn": "arn:aws:iam::403104210820:policy/LambdaMediaInfoExecutionRolePolicy", 
+        "UpdateDate": "2017-07-26T16:11:16.702Z"
+    }
+}
+
+
+lambda create function
+{
+    "CodeSha256": "eiOwlxJ/HR8hW/5/c0GiCfvJZgD1pK0Zz3G8HzE/7Qo=", 
+    "FunctionName": "LambdaMediaInfo", 
+    "CodeSize": 3391578, 
+    "MemorySize": 128, 
+    "FunctionArn": "arn:aws:lambda:us-west-2:403104210820:function:LambdaMediaInfo", 
+    "Version": "$LATEST", 
+    "Role": "arn:aws:iam::403104210820:role/LambdaMediaInfoExecutionRole", 
+    "Timeout": 60, 
+    "LastModified": "2017-07-26T16:13:34.800+0000", 
+    "Handler": "lambda_function.lambda_handler", 
+    "Runtime": "python2.7", 
+    "Description": "Lambda MediaInfo Function"
+}
+
+
+lambda add permission
+{
+    "Statement": "{\"Sid\":\"Id-1\",\"Resource\":\"arn:aws:lambda:us-east-1:403104210820:function:LambdaMediaInfo\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"s3.amazonaws.com\"},\"Action\":[\"lambda:InvokeFunction\"],\"Condition\":{\"StringEquals\":{\"AWS:SourceAccount\":\"403104210820\"},\"ArnLike\":{\"AWS:SourceArn\":\"arn:aws:s3:::video-metadata-source\"}}}"
+}

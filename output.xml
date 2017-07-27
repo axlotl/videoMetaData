@@ -1,0 +1,153 @@
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<Mediainfo version=\ "0.7.97\">
+    <File>
+        <track type=\ "General\">
+	        <Count>326</Count>
+	        <Count_of_stream_of_this_kind>1</Count_of_stream_of_this_kind>
+	        <Kind_of_stream>General</Kind_of_stream>
+	        <Kind_of_stream>General</Kind_of_stream>
+	        <Stream_identifier>0</Stream_identifier>
+	        <Count_of_video_streams>1</Count_of_video_streams>
+	        <Video_Format_List>AVC</Video_Format_List>
+	        <Video_Format_WithHint_List>AVC</Video_Format_WithHint_List>
+	        <Codecs_Video>AVC</Codecs_Video>
+	        <Complete_name>https://video-metadata-source.s3.amazonaws.com/gtrain.mp4?AWSAccessKeyId=ASIAJQHHWQW5VVDV3MPQ&Expires=1501100239&x-amz-security-token=FQoDYXdzEDUaDFIRcHVoKuGzPCJkWCLoATG17c5RLo9G6PP%2FzD94CSBf%2F9Ru7LFxcYMP6UM4i6W0kchJ04yDxDfYE1FGIJNqF6nLls7VSB10B9XyhFbMDDkUbUCMSTAuDHfMNW6uMT5gl0CTR5aNVUcgU%2BStX7HfauBN68lUksPemo11j3vODWDSZlKBD5orgPAHe8Zl4sz7VLcu6PAOtIeKNk%2BE%2FplRpUKrHd6or%2FT4vpvS4Uj%2BFBEHLxMnwgRdpYb1E31m7Put9GUkfPWE%2BW%2F2EB1FAdxY6NnEZ53OEC2j2k7jJQsU%2BQa0W87WX9oq9KLLwPRhmzi%2FEzFhJrL6N64os%2BjjywU%3D&Signature=4ATAFsygiMizATOUnGdU%2Bwcznic%3D</Complete_name>
+	        <Folder_name>https://video-metadata-source.s3.amazonaws.com</Folder_name>
+	        <File_name>gtrain</File_name>
+	        <File_extension>mp4?AWSAccessKeyId=ASIAJQHHWQW5VVDV3MPQ&Expires=1501100239&x-amz-security-token=FQoDYXdzEDUaDFIRcHVoKuGzPCJkWCLoATG17c5RLo9G6PP%2FzD94CSBf%2F9Ru7LFxcYMP6UM4i6W0kchJ04yDxDfYE1FGIJNqF6nLls7VSB10B9XyhFbMDDkUbUCMSTAuDHfMNW6uMT5gl0CTR5aNVUcgU%2BStX7HfauBN68lUksPemo11j3vODWDSZlKBD5orgPAHe8Zl4sz7VLcu6PAOtIeKNk%2BE%2FplRpUKrHd6or%2FT4vpvS4Uj%2BFBEHLxMnwgRdpYb1E31m7Put9GUkfPWE%2BW%2F2EB1FAdxY6NnEZ53OEC2j2k7jJQsU%2BQa0W87WX9oq9KLLwPRhmzi%2FEzFhJrL6N64os%2BjjywU%3D&Signature=4ATAFsygiMizATOUnGdU%2Bwcznic%3D</File_extension>
+	        <Format>MPEG-4</Format>
+	        <Format>MPEG-4</Format>
+	        <Format_Extensions_usually_used>mov mp4 m4v m4a m4b m4p 3ga 3gpa 3gpp 3gp 3gpp2 3g2 k3g jpm jpx mqv ismv isma ismt f4a f4b f4v</Format_Extensions_usually_used>
+	        <Commercial_name>MPEG-4</Commercial_name>
+	        <Format_profile>Base Media</Format_profile>
+	        <Internet_media_type>video/mp4</Internet_media_type>
+	        <Codec_ID>isom</Codec_ID>
+	        <Codec_ID>isom (isom/iso2/avc1/mp41)</Codec_ID>
+	        <Codec_ID_Url>http://www.apple.com/quicktime/download/standalone.html</Codec_ID_Url>
+	        <CodecID_Compatible>isom/iso2/avc1/mp41</CodecID_Compatible>
+	        <Codec>MPEG-4</Codec>
+	        <Codec>MPEG-4</Codec>
+	        <Codec_Extensions_usually_used>mov mp4 m4v m4a m4b m4p 3ga 3gpa 3gpp 3gp 3gpp2 3g2 k3g jpm jpx mqv ismv isma ismt f4a f4b f4v</Codec_Extensions_usually_used>
+	        <File_size>3794363</File_size>
+	        <File_size>3.62 MiB</File_size>
+	        <File_size>4 MiB</File_size>
+	        <File_size>3.6 MiB</File_size>
+	        <File_size>3.62 MiB</File_size>
+	        <File_size>3.619 MiB</File_size>
+	        <Duration>11000</Duration>
+	        <Duration>11 s 0 ms</Duration>
+	        <Duration>11 s 0 ms</Duration>
+	        <Duration>11 s 0 ms</Duration>
+	        <Duration>00:00:11.000</Duration>
+	        <Duration>00:00:11:00</Duration>
+	        <Duration>00:00:11.000 (00:00:11:00)</Duration>
+	        <Overall_bit_rate>2759537</Overall_bit_rate>
+	        <Overall_bit_rate>2 760 kb/s</Overall_bit_rate>
+	        <Frame_rate>4.000</Frame_rate>
+	        <Frame_rate>4.000 FPS</Frame_rate>
+	        <Frame_count>44</Frame_count>
+	        <Stream_size>1045</Stream_size>
+	        <Stream_size>1.02 KiB (0%)</Stream_size>
+	        <Stream_size>1 KiB</Stream_size>
+	        <Stream_size>1.0 KiB</Stream_size>
+	        <Stream_size>1.02 KiB</Stream_size>
+	        <Stream_size>1.021 KiB</Stream_size>
+	        <Stream_size>1.02 KiB (0%)</Stream_size>
+	        <Proportion_of_this_stream>0.00028</Proportion_of_this_stream>
+	        <HeaderSize>40</HeaderSize>
+	        <DataSize>3793326</DataSize>
+	        <FooterSize>997</FooterSize>
+	        <IsStreamable>No</IsStreamable>
+	        <Writing_application>Lavf57.20.100</Writing_application>
+	        <Writing_application>Lavf57.20.100</Writing_application>
+	        <FileExtension_Invalid>mov mp4 m4v m4a m4b m4p 3ga 3gpa 3gpp 3gp 3gpp2 3g2 k3g jpm jpx mqv ismv isma ismt f4a f4b f4v</FileExtension_Invalid></track>
+	        <track type=\ "Video\">
+	        <Count>338</Count>
+	        <Count_of_stream_of_this_kind>1</Count_of_stream_of_this_kind>
+	        <Kind_of_stream>Video</Kind_of_stream>
+	        <Kind_of_stream>Video</Kind_of_stream>
+	        <Stream_identifier>0</Stream_identifier>
+	        <StreamOrder>0</StreamOrder>
+	        <ID>1</ID>
+	        <ID>1</ID>
+	        <Format>AVC</Format>
+	        <Format_Info>Advanced Video Codec</Format_Info>
+	        <Format_Url>http://developers.videolan.org/x264.html</Format_Url>
+	        <Commercial_name>AVC</Commercial_name>
+	        <Format_profile>Baseline@L4.2</Format_profile>
+	        <Format_settings>1 Ref Frames</Format_settings>
+	        <Format_settings__CABAC>No</Format_settings__CABAC>
+	        <Format_settings__CABAC>No</Format_settings__CABAC>
+	        <Format_settings__RefFrames>1</Format_settings__RefFrames>
+	        <Format_settings__RefFrames>1 frame</Format_settings__RefFrames>
+	        <Internet_media_type>video/H264</Internet_media_type>
+	        <Codec_ID>avc1</Codec_ID>
+	        <Codec_ID_Info>Advanced Video Coding</Codec_ID_Info>
+	        <Codec>AVC</Codec>
+	        <Codec>AVC</Codec>
+	        <Codec_Family>AVC</Codec_Family>
+	        <Codec_Info>Advanced Video Codec</Codec_Info>
+	        <Codec_Url>http://developers.videolan.org/x264.html</Codec_Url>
+	        <Codec_CC>avc1</Codec_CC>
+	        <Codec_profile>Baseline@L4.2</Codec_profile>
+	        <Codec_settings>1 Ref Frames</Codec_settings>
+	        <Codec_settings__CABAC>No</Codec_settings__CABAC>
+	        <Codec_Settings_RefFrames>1</Codec_Settings_RefFrames>
+	        <Duration>11000</Duration>
+	        <Duration>11 s 0 ms</Duration>
+	        <Duration>11 s 0 ms</Duration>
+	        <Duration>11 s 0 ms</Duration>
+	        <Duration>00:00:11.000</Duration>
+	        <Duration>00:00:11:00</Duration>
+	        <Duration>00:00:11.000 (00:00:11:00)</Duration>
+	        <Bit_rate>2758777</Bit_rate>
+	        <Bit_rate>2 759 kb/s</Bit_rate>
+	        <Nominal_bit_rate>2048000</Nominal_bit_rate>
+	        <Nominal_bit_rate>2 048 kb/s</Nominal_bit_rate>
+	        <Width>1702</Width>
+	        <Width>1 702 pixels</Width>
+	        <Height>1272</Height>
+	        <Height>1 272 pixels</Height>
+	        <Stored_Width>1712</Stored_Width>
+	        <Stored_Height>1280</Stored_Height>
+	        <Sampled_Width>1702</Sampled_Width>
+	        <Sampled_Height>1272</Sampled_Height>
+	        <Pixel_aspect_ratio>1.000</Pixel_aspect_ratio>
+	        <Display_aspect_ratio>1.338</Display_aspect_ratio>
+	        <Display_aspect_ratio>4:3</Display_aspect_ratio>
+	        <Rotation>0.000</Rotation>
+	        <Frame_rate_mode>CFR</Frame_rate_mode>
+	        <Frame_rate_mode>Constant</Frame_rate_mode>
+	        <FrameRate_Mode_Original>VFR</FrameRate_Mode_Original>
+	        <Frame_rate>4.000</Frame_rate>
+	        <Frame_rate>4.000 FPS</Frame_rate>
+	        <Frame_count>44</Frame_count>
+	        <Resolution>8</Resolution>
+	        <Resolution>8 bits</Resolution>
+	        <Colorimetry>4:2:0</Colorimetry>
+	        <Color_space>YUV</Color_space>
+	        <Chroma_subsampling>4:2:0</Chroma_subsampling>
+	        <Chroma_subsampling>4:2:0</Chroma_subsampling>
+	        <Bit_depth>8</Bit_depth>
+	        <Bit_depth>8 bits</Bit_depth>
+	        <Scan_type>Progressive</Scan_type>
+	        <Scan_type>Progressive</Scan_type>
+	        <Interlacement>PPF</Interlacement>
+	        <Interlacement>Progressive</Interlacement>
+	        <Bits__Pixel_Frame_>0.319</Bits__Pixel_Frame_>
+	        <Stream_size>3793318</Stream_size>
+	        <Stream_size>3.62 MiB (100%)</Stream_size>
+	        <Stream_size>4 MiB</Stream_size>
+	        <Stream_size>3.6 MiB</Stream_size>
+	        <Stream_size>3.62 MiB</Stream_size>
+	        <Stream_size>3.618 MiB</Stream_size>
+	        <Stream_size>3.62 MiB (100%)</Stream_size>
+	        <Proportion_of_this_stream>0.99972</Proportion_of_this_stream>
+	        <Writing_library>x264 - core 142 r2491 24e4fed</Writing_library>
+	        <Writing_library>x264 core 142 r2491 24e4fed</Writing_library>
+	        <Encoded_Library_Name>x264</Encoded_Library_Name>
+	        <Encoded_Library_Version>core 142 r2491 24e4fed</Encoded_Library_Version>
+	        <Encoding_settings>cabac=0 / ref=1 / deblock=0:0:0 / analyse=0:0 / me=dia / subme=0 / psy=1 / psy_rd=1.00:0.00 / mixed_ref=0 / me_range=16 / chroma_me=1 / trellis=0 / 8x8dct=0 / cqm=0 / deadzone=21,11 / fast_pskip=1 / chroma_qp_offset=0 / threads=3 / lookahead_threads=1 / sliced_threads=0 / nr=0 / decimate=1 / interlaced=0 / bluray_compat=0 / constrained_intra=0 / bframes=0 / weightp=0 / keyint=250 / keyint_min=4 / scenecut=0 / intra_refresh=0 / rc=abr / mbtree=0 / bitrate=2048 / ratetol=1.0 / qcomp=0.60 / qpmin=0 / qpmax=69 / qpstep=4 / ip_ratio=1.40 / aq=0</Encoding_settings>
+	    </track>
+	</File>
+</Mediainfo>
