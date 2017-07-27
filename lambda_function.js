@@ -1,6 +1,6 @@
 'use strict';
 
-const async = require('async');
+// require('async');
 const subprocess = require( 'child_process' );
 
 const aws = require('aws-sdk');
@@ -15,7 +15,7 @@ exports.handler = (event, context, callback) => {
     const key = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, ' '));
     // console.log('bucket: ' + bucket );
     // console.log( 'key: ' + key);
-    console.log( 'event', event.Records[0] );
+    // console.log( 'event', event.Records[0] );
     const params = {
         Bucket: bucket,
         Key: key,
@@ -30,31 +30,41 @@ exports.handler = (event, context, callback) => {
             console.log(message);
             callback(message);
         } else {
-            console.log( 'got signed url', data);
+            // console.log('CONTENT TYPE:', data.ContentType);
+            // callback(null, data.ContentType);
+            console.log( 'data', data);
+            console.log('params', params);
+
+            const item = { keyName : params.Key, technicalMetadata : data.ContentType };
+            console.log( 'item', item );
+
+            
+            const results = subprocess.spawn('./mediainfo', ['--full', '--output=JSON', data] );
+            // console.log('results', results);
+            results.stdout.on('data', (results) => {
+                console.log( 'out args: ', arguments, '\nthose were the args');
+                console.log('results:', typeof results);
+                //console.log(results);
+                const unbuffed = results.toString();
+                console.log('unbuffed:', unbuffed);
+                
+                // const str = Buffer.from( results );
+                // console.log('results:', str.toSring());
+                console.log(JSON.stringify( unbuffed));
+                console.log(typeof JSON.stringify( unbuffed));
+                dynamodb.put({ TableName : 'TechnicalMetadata', Item : unbuffed }, function( err, dbresults){
+                    console.log( 'trying dynamodb' );
+                    if( err ){
+                        console.log( err );
+                    } else {
+                        console.log( 'succcess', dbresults );
+                    }
+                });    
+            });
+
+
+            
         }
     });
-    // console.log('CONTENT TYPE:', data.ContentType);
-    // callback(null, data.ContentType);
-    console.log( 'url', url);
-    console.log('params', params);
-
-    const item = { keyName : params.Key, technicalMetadata : 'test entry' };
-    console.log( 'item', item );
-
-    console.log( typeof subprocess.spawnSync);
-    const results = subprocess.spawnSync('./mediainfo', ['--full', '--output=XML', url] );
-    console.log('results', results);
-
-
-    dynamodb.put({ TableName : 'TechnicalMetadata', Item : item }, function( err, response){
-        console.log( 'trying dynamodb' );
-        if( err ){
-            console.log( err );
-        } else {
-            console.log( 'succcess', response );
-        }
-    });
-
-
 };
 
